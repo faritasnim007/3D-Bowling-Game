@@ -688,7 +688,7 @@ def stop_replay():
 def init_gl():
     glClearColor(0.05, 0.08, 0.12, 1.0)
     glEnable(GL_DEPTH_TEST)
-    # glShadeModel(GL_SMOOTH)
+    glShadeModel(GL_SMOOTH)
     
 #alvi
 def full_game_reset():
@@ -703,7 +703,7 @@ def main():
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)
     glutInitWindowSize(WIN_W, WIN_H)
     glutInitWindowPosition(50, 50)
-    glutCreateWindow(b"3D Bowling (GLUT + GLU) - Multiplayer + Angle + Replay")
+    glutCreateWindow(b"3D Bowling Game")
 
     init_gl()
     init_players()
