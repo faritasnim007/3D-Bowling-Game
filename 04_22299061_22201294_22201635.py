@@ -688,7 +688,7 @@ def stop_replay():
 def init_gl():
     glClearColor(0.05, 0.08, 0.12, 1.0)
     glEnable(GL_DEPTH_TEST)
-    glShadeModel(GL_SMOOTH)
+    # glShadeModel(GL_SMOOTH)
     
 #alvi
 def full_game_reset():
